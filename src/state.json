@@ -1,0 +1,109 @@
+{
+  "sections": {
+    "home": {
+      "content": {
+        "header": "Build social profiles and gain revenue and profits",
+        "items": [
+          {
+            "icon": "fa-check",
+            "text": "Some random text about items"
+          },
+          {
+            "icon": "fa-check",
+            "text": "Some even randomer not a word text"
+          },
+          {
+            "icon": "fa-check",
+            "text": "Crazy nonsense about stuff"
+          },
+          {
+            "icon": "fa-check",
+            "text": "Here we go again"
+          }
+        ],
+        "inputs": {
+          "username": {
+            "placeholder": "Username",
+            "icon": "fa-user",
+            "value": ""
+          },
+          "email": {
+            "placeholder": "Email",
+            "icon": "fa-envelope",
+            "value": ""
+          },
+          "password": {
+            "placeholder": "Password",
+            "icon": "fa-key",
+            "value": ""
+          },
+          "confirmPassword": {
+            "placeholder": "Confirm Password",
+            "icon": "fa-key",
+            "value": ""
+          }
+        }
+      }
+    },
+    "create": {
+      "header": {
+        "title": "Create",
+        "subtitle": "Create amazing content and do stuff dah!",
+        "buttonText": "Learn More"
+      },
+      "content": {
+        "header": "Create content to your hearts desire fool",
+        "items": [
+          {
+            "icon": "fa-check",
+            "text": "Some random text about items"
+          },
+          {
+            "icon": "fa-check",
+            "text": "Some even randomer not a word text"
+          }
+        ]
+      }
+    },
+    "explore": {
+      "header": {
+        "title": "Explore",
+        "subtitle": "Create amazing content and do stuff dah!",
+        "buttonText": "Learn More"
+      },
+      "content": {
+        "header": "Create content to your hearts desire fool",
+        "items": [
+          {
+            "icon": "fa-check",
+            "text": "Some random text about items"
+          },
+          {
+            "icon": "fa-check",
+            "text": "Some even randomer not a word text"
+          }
+        ]
+      }
+    },
+    "share": {
+      "header": {
+        "title": "Share",
+        "subtitle": "Create amazing content and do stuff dah!",
+        "buttonText": "Learn More"
+      },
+      "content": {
+        "header": "Create content to your hearts desire fool",
+        "items": [
+          {
+            "icon": "fa-check",
+            "text": "Some random text about items"
+          },
+          {
+            "icon": "fa-check",
+            "text": "Some even randomer not a word text"
+          }
+        ]
+      }
+    }
+  }
+}

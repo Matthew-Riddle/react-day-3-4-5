@@ -5,19 +5,17 @@ import Input from '../UI/Input/Input'
 import FormSubmit from './FormSubmit/FormSubmit'
 
 const form = props => (
-  <div class='card has-background-info has-rounded-corners'>
-    <div class='card-content'>
-      <div class='has-padding-4 has-text-white has-text-centered'>
+  <div className='card has-background-info has-rounded-corners'>
+    <div className='card-content'>
+      <div className='has-padding-4 has-text-white has-text-centered'>
         <FormHeader />
       </div>
       <form>
-        {Object.keys(props.inputs).map(input => (
+        {Object.entries(props.inputs).map(([name, input]) => (
           <Input
-            key={props.inputs[input].placeholder}
-            icon={props.inputs[input].icon}
-            placeholder={props.inputs[input].placeholder}
-            value={props.inputs[input].value}
-            changed={value => props.changed(input, value)}
+            key={name}
+            input={input}
+            changed={value => props.changed(name, value)}
           />
         ))}
         <FormSubmit />

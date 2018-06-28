@@ -1,7 +1,7 @@
 import React from 'react'
 
 const button = props => (
-  <button className={`button ${props.style}`}>{props.buttonText}</button>
+  <button className={`button ${props.buttonStyle}`}>{props.buttonText}</button>
 )
 
 export default button

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import './TextBlock.css'
 
@@ -6,12 +6,17 @@ import TextHeader from './TextHeader/TextHeader'
 import TextItem from './TextItem/TextItem'
 
 const textBlock = props => (
-  <Fragment>
-    <TextHeader header={props.headerText} />
+  <div className='TextBlock'>
+    <TextHeader header={props.headerText} textColor={props.textColor} />
     {props.items.map((item, idx) => (
-      <TextItem key={idx} icon={item.icon} text={item.text} />
+      <TextItem
+        key={idx}
+        icon={item.icon}
+        text={item.text}
+        textColor={props.textColor}
+      />
     ))}
-  </Fragment>
+  </div>
 )
 
 export default textBlock

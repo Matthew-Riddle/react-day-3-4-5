@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const icon = props => (
-  <span class='icon'>
-    <i class={`fas ${props.icon}`} />
-  </span>
-)
+import PropTypes from 'prop-types'
 
-export default icon
+class Icon extends Component {
+  render () {
+    return (
+      <span className='icon'>
+        <i className={`fas ${this.props.icon}`} />
+      </span>
+    )
+  }
+}
+
+Icon.propTypes = {
+  icon: PropTypes.string
+}
+
+export default Icon

@@ -1,0 +1,21 @@
+.Screenheight {
+  height: 100vh;
+}
+
+.Header {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Content {
+  height: 60%;
+}
+
+.Fullheight {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
