@@ -5,6 +5,9 @@ import './Navbar.css'
 import NavBrand from './NavBrand/NavBrand'
 import NavItem from './NavItem/NavItem'
 
+const capitaliseFirstLetter = string =>
+  string.charAt(0).toUpperCase() + string.slice(1)
+
 const navBar = props => {
   return (
     <nav className='Navbar navbar is-fixed-top' aria-label='main navigation'>
@@ -24,9 +27,15 @@ const navBar = props => {
       </div>
       <div className='navbar-menu' id='navMenu'>
         <div className='navbar-end'>
-          {props.links.map(link => (
-            <NavItem key={link.name} name={link.name} link={link.link} />
-          ))}
+          {
+            props.links.map(link => (
+              <NavItem
+                key={link}
+                name={capitaliseFirstLetter(link)}
+                link={`/${link === 'home' ? '' : link}`}
+              />
+            ))
+          }
         </div>
       </div>
     </nav>

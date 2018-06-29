@@ -1,9 +1,10 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const navItem = props => (
-  <a href={props.link} className='navbar-item'>
+  <NavLink to={props.link} exact className='navbar-item'>
     {props.name}
-  </a>
+  </NavLink>
 )
 
 export default navItem
